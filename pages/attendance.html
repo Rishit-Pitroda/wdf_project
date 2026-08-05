@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Attendance</title>
+    <link rel="stylesheet" href="D:\wdf_project\css\style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>🎓 Student Portal</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="attendance.html" class="active">Attendance</a></li>
+                <li><a href="assignment.html">Assignment</a></li>
+                <li><a href="result.html">Result</a></li>
+                <li><a href="faculties.html">Faculties</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-section">
+            <h2>Attendance</h2>
+            <p>Your attendance records for the current semester</p>
+            
+            <div class="attendance-summary">
+                <div class="summary-card highlight">
+                    <h4>Overall Attendance</h4>
+                    <p class="summary-number">85%</p>
+                    <p>Good Standing</p>
+                </div>
+                <div class="summary-card">
+                    <h4>Classes Attended</h4>
+                    <p class="summary-number">112</p>
+                    <p>Out of 132</p>
+                </div>
+                <div class="summary-card">
+                    <h4>Classes Missed</h4>
+                    <p class="summary-number">20</p>
+                    <p>Need improvement</p>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Classes Attended</th>
+                            <th>Total Classes</th>
+                            <th>Percentage</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data Structures & Algorithms</td>
+                            <td>28</td>
+                            <td>30</td>
+                            <td>93%</td>
+                            <td><span class="status excellent">Excellent</span></td>
+                        </tr>
+                        <tr>
+                            <td>Database Management Systems</td>
+                            <td>22</td>
+                            <td>28</td>
+                            <td>79%</td>
+                            <td><span class="status good">Good</span></td>
+                        </tr>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>18</td>
+                            <td>20</td>
+                            <td>90%</td>
+                            <td><span class="status excellent">Excellent</span></td>
+                        </tr>
+                        <tr>
+                            <td>Computer Networks</td>
+                            <td>24</td>
+                            <td>30</td>
+                            <td>80%</td>
+                            <td><span class="status good">Good</span></td>
+                        </tr>
+                        <tr>
+                            <td>Software Engineering</td>
+                            <td>20</td>
+                            <td>24</td>
+                            <td>83%</td>
+                            <td><span class="status good">Good</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="attendance-chart">
+                <h3>Monthly Attendance Trend</h3>
+                <div class="chart-bars">
+                    <div class="bar" style="height: 85px;">
+                        <span>85%</span>
+                        <span class="bar-label">Jan</span>
+                    </div>
+                    <div class="bar" style="height: 90px;">
+                        <span>90%</span>
+                        <span class="bar-label">Feb</span>
+                    </div>
+                    <div class="bar" style="height: 78px;">
+                        <span>78%</span>
+                        <span class="bar-label">Mar</span>
+                    </div>
+                    <div class="bar" style="height: 82px;">
+                        <span>82%</span>
+                        <span class="bar-label">Apr</span>
+                    </div>
+                    <div class="bar" style="height: 88px;">
+                        <span>88%</span>
+                        <span class="bar-label">May</span>
+                    </div>
+                    <div class="bar" style="height: 85px;">
+                        <span>85%</span>
+                        <span class="bar-label">Jun</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

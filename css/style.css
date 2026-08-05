@@ -1,0 +1,968 @@
+/* ---------- RESET ---------- */
+body, h1, h2, h3, h4, p, ul, li, a, form, input, select, textarea, table, th, td {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------- BODY ---------- */
+body {
+    background-color: #f4f7f6;
+    color: #333333;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+    background-color: #34495e;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #34495e;
+}
+
+/* --- HOVER EFFECT --- */
+nav ul li a:hover {
+    background-color: #3498db;
+}
+
+/* --- ACTIVE LINK --- */
+nav ul li a.active {
+    background-color: #3498db;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- PAGE SECTION (all pages) ---------- */
+.page-section {
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.page-section h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 28px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.page-section > p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* ---------- HERO SECTION (homepage only) ---------- */
+.hero {
+    background-color: #2c3e50;
+    background-image: linear-gradient(to bottom, #2c3e50, #3498db);
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    text-align: center;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+}
+
+/* ---------- FEATURES SECTION (homepage) ---------- */
+.features {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-size: 32px;
+}
+
+.features-grid {
+    text-align: center;
+}
+
+.feature-card {
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+.feature-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.feature-card p {
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.btn-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ---------- FACULTIES SECTION (NEW) ---------- */
+.faculties-grid {
+    text-align: center;
+}
+
+.faculty-card {
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 220px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    vertical-align: top;
+}
+
+.faculty-avatar {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.faculty-card h3 {
+    color: #2c3e50;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.faculty-subject {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.faculty-details {
+    color: #7f8c8d;
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.faculty-email {
+    color: #555555;
+    font-size: 13px;
+}
+
+/* ---------- FORMS (Register, Login, Contact) ---------- */
+.form-container {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.checkbox-group {
+    text-align: left;
+}
+
+.checkbox-group input {
+    width: auto;
+    display: inline-block;
+}
+
+.checkbox-group label {
+    display: inline-block;
+}
+
+.form-footer {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+}
+
+.form-footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+/* ---------- DASHBOARD CARDS ---------- */
+.dashboard-grid {
+    text-align: center;
+}
+
+.card {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 220px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+}
+
+.card h3 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.card-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3498db;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.deadline-list,
+.announcement-list {
+    text-align: left;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.deadline-list li,
+.announcement-list li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 14px;
+}
+
+.deadline-list li:last-child,
+.announcement-list li:last-child {
+    border-bottom: none;
+}
+
+.quick-actions {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #2c3e50;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.quick-actions h3 {
+    margin-bottom: 15px;
+    color: #feffff;
+}
+
+.action-buttons {
+    text-align: center;
+}
+
+/* ---------- PROFILE ---------- */
+.profile-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-header {
+    background-color: #f8f9fa;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-avatar-large {
+    font-size: 60px;
+    background-color: #3498db;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.profile-header-info h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.profile-header-info p {
+    color: #7f8c8d;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.profile-details-grid {
+    text-align: center;
+}
+
+.profile-detail-item {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.profile-detail-item h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+}
+
+.detail-row {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row .label {
+    color: #7f8c8d;
+    font-weight: bold;
+}
+
+.detail-row .value {
+    color: #2c3e50;
+}
+
+/* ---------- COURSES ---------- */
+.courses-grid {
+    text-align: center;
+}
+
+.course-card {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 280px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    border: 1px solid #e9ecef;
+    vertical-align: top;
+}
+
+.course-header {
+    margin-bottom: 15px;
+}
+
+.course-header h3 {
+    color: #2c3e50;
+    font-size: 18px;
+}
+
+.course-code {
+    background-color: #3498db;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.course-details p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #555555;
+    font-size: 14px;
+}
+
+.course-actions {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+}
+.btn-tertiary {
+    color: #2c3e50;
+    border: 2px solid #2c3e50;
+    
+}
+/* ---------- ATTENDANCE ---------- */
+.attendance-summary {
+    text-align: center;
+}
+
+.summary-card {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 180px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.summary-card.highlight {
+    background-color: #3498db;
+    color: white;
+}
+
+.summary-card.highlight h4 {
+    color: white;
+}
+
+.summary-card.highlight .summary-number {
+    color: white;
+}
+
+.summary-card h4 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.summary-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3498db;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.attendance-chart {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.attendance-chart h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.chart-bars {
+    text-align: center;
+}
+
+.bar {
+    display: inline-block;
+    width: 30px;
+    background-color: #3498db;
+    border-radius: 4px 4px 0 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    padding-top: 10px;
+    vertical-align: bottom;
+}
+
+.bar span:first-child {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    display: block;
+}
+
+.bar-label {
+    display: block;
+    color: #7f8c8d;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ---------- ASSIGNMENTS ---------- */
+.assignment-filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.assignment-list {
+    text-align: center;
+}
+
+.assignment-item {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    border-left: 4px solid #e74c3c;
+    vertical-align: top;
+}
+
+.assignment-item.submitted {
+    border-left-color: #3498db;
+}
+
+.assignment-item.graded {
+    border-left-color: #27ae60;
+}
+
+.assignment-info h3 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.assignment-course {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.assignment-desc {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.assignment-meta {
+    font-size: 14px;
+    color: #555555;
+}
+
+.assignment-meta span {
+    margin-right: 15px;
+}
+
+.assignment-actions {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+    text-align: right;
+}
+
+.status {
+    display: inline-block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pending .status {
+    background-color: #fdebd0;
+    color: #e67e22;
+}
+
+.submitted .status {
+    background-color: #d6eaf8;
+    color: #2980b9;
+}
+
+.graded .status {
+    background-color: #f4ecf7;
+    color: #8e44ad;
+}
+
+.submitted-date {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.grade {
+    font-weight: bold;
+    color: #27ae60;
+    font-size: 16px;
+}
+
+/* ---------- RESULTS ---------- */
+.result-summary {
+    text-align: center;
+}
+
+.transcript-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ---------- CONTACT ---------- */
+.contact-container {
+    text-align: center;
+}
+
+.contact-info-card {
+    background-color: #f8f9fa;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 350px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.contact-info-card h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    font-size: 20px;
+    background-color: #3498db;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.contact-item h4 {
+    color: #2c3e50;
+    margin-bottom: 3px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contact-item p {
+    color: #7f8c8d;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.social-links {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+}
+
+.social-links h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icon {
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contact-form-card {
+    background-color: #f8f9fa;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 350px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.contact-form-card h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* ---------- TABLES (Attendance, Results) ---------- */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+table th,
+table td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+table tfoot {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+table tfoot td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* ---------- STATUS BADGES (for tables) ---------- */
+.status.excellent {
+    background-color: #d5f5e3;
+    color: #27ae60;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.status.good {
+    background-color: #d6eaf8;
+    color: #2980b9;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 14px;
+}
