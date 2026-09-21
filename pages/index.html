@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portal - Home</title>
-    <link rel="stylesheet" href="D:\wdf_project\css\style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -13,16 +16,20 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">🎓</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="register.html">Register</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="attendance.html">Attendance</a></li>
-                <li><a href="assignment.html">Assignment</a></li>
-                <li><a href="result.html">Result</a></li>
-                <li><a href="faculties.html">Faculties</a></li>
+                <li class="dropdown">
+                    <a href="dashboard.html">Dashboard <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="attendance.html">Attendance</a></li>
+                        <li><a href="assignment.html">Assignment</a></li>
+                        <li><a href="result.html">Result</a></li>
+                        <li><a href="faculties.html">Faculties</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -32,10 +39,6 @@
         <section class="hero">
             <h2>Welcome to Student Portal</h2>
             <p>Your one-stop platform for managing academic life</p>
-            <div class="hero-buttons">
-                <a href="register.html" class="btn btn-primary">Register Now</a>
-                <a href="login.html" class="btn btn-secondary">Login</a>
-            </div>
         </section>
 
         <section class="features">
@@ -44,22 +47,18 @@
                 <div class="feature-card">
                     <h3>📚 Courses</h3>
                     <p>View and manage your enrolled courses</p>
-                    <a href="courses.html" class="btn-link">View Courses →</a>
                 </div>
                 <div class="feature-card">
                     <h3>📊 Attendance</h3>
-                    <p>Track your attendance records</p>
-                    <a href="attendance.html" class="btn-link">View Attendance →</a>
+                    <p>Track your attendance records here</p>
                 </div>
                 <div class="feature-card">
                     <h3>📝 Assignments</h3>
                     <p>Manage your assignments and deadlines</p>
-                    <a href="assignment.html" class="btn-link">View Assignments →</a>
                 </div>
                 <div class="feature-card">
                     <h3>🏆 Results</h3>
                     <p>Check your academic results and GPA</p>
-                    <a href="result.html" class="btn-link">View Results →</a>
                 </div>
             </div>
         </section>
@@ -69,4 +68,5 @@
         <p>&copy; 2026 Student Portal. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

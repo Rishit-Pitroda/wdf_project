@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portal - Attendance</title>
-    <link rel="stylesheet" href="D:\wdf_project\css\style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -16,13 +19,17 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="register.html">Register</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="attendance.html" class="active">Attendance</a></li>
-                <li><a href="assignment.html">Assignment</a></li>
-                <li><a href="result.html">Result</a></li>
-                <li><a href="faculties.html">Faculties</a></li>
+                <li class="dropdown">
+                    <a href="dashboard.html">Dashboard <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="attendance.html" class="active">Attendance</a></li>
+                        <li><a href="assignment.html">Assignment</a></li>
+                        <li><a href="result.html">Result</a></li>
+                        <li><a href="faculties.html">Faculties</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -32,7 +39,7 @@
         <section class="page-section">
             <h2>Attendance</h2>
             <p>Your attendance records for the current semester</p>
-            
+
             <div class="attendance-summary">
                 <div class="summary-card highlight">
                     <h4>Overall Attendance</h4>
@@ -50,7 +57,7 @@
                     <p>Need improvement</p>
                 </div>
             </div>
-            
+
             <div class="table-container">
                 <table>
                     <thead>
@@ -101,7 +108,7 @@
                     </tbody>
                 </table>
             </div>
-            
+
             <div class="attendance-chart">
                 <h3>Monthly Attendance Trend</h3>
                 <div class="chart-bars">
@@ -138,4 +145,5 @@
         <p>&copy; 2026 Student Portal. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

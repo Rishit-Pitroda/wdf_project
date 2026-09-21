@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portal - Register</title>
-    <link rel="stylesheet" href="D:\wdf_project\css\style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -16,13 +19,17 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="register.html" class="active">Register</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="attendance.html">Attendance</a></li>
-                <li><a href="assignment.html">Assignment</a></li>
-                <li><a href="result.html">Result</a></li>
-                <li><a href="faculties.html">Faculties</a></li>
+                <li class="dropdown">
+                    <a href="dashboard.html">Dashboard <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="attendance.html">Attendance</a></li>
+                        <li><a href="assignment.html">Assignment</a></li>
+                        <li><a href="result.html">Result</a></li>
+                        <li><a href="faculties.html">Faculties</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -32,24 +39,24 @@
         <section class="page-section">
             <h2>Register</h2>
             <p>Create your student account</p>
-            
+
             <div class="form-container">
                 <form>
                     <div class="form-group">
                         <label for="fullname">Full Name *</label>
                         <input type="text" id="fullname" placeholder="Enter your full name" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="email">Email Address *</label>
                         <input type="email" id="email" placeholder="Enter your email" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="student-id">Student ID *</label>
                         <input type="text" id="student-id" placeholder="Enter student ID" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="course">Course *</label>
                         <select id="course" required>
@@ -61,7 +68,7 @@
                             <option value="cyber">Cybersecurity</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="year">Year of Study *</label>
                         <select id="year" required>
@@ -72,25 +79,25 @@
                             <option value="4">4th Year</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="password">Password *</label>
                         <input type="password" id="password" placeholder="Create a password" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="confirm-password">Confirm Password *</label>
                         <input type="password" id="confirm-password" placeholder="Confirm your password" required>
                     </div>
-                    
+
                     <div class="form-group checkbox-group">
                         <input type="checkbox" id="terms" required>
                         <label for="terms">I agree to the Terms and Conditions</label>
                     </div>
-                    
+
                     <button type="submit" class="btn btn-primary btn-block">Register</button>
                 </form>
-                
+
                 <div class="form-footer">
                     <p>Already have an account? <a href="login.html">Login here</a></p>
                 </div>
@@ -102,4 +109,5 @@
         <p>&copy; 2026 Student Portal. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

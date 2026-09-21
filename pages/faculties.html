@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portal - Faculties</title>
-    <link rel="stylesheet" href="D:\wdf_project\css\style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -16,13 +19,17 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="register.html">Register</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="attendance.html">Attendance</a></li>
-                <li><a href="assignment.html">Assignment</a></li>
-                <li><a href="result.html">Result</a></li>
-                <li><a href="faculties.html" class="active">Faculties</a></li>
+                <li class="dropdown">
+                    <a href="dashboard.html">Dashboard <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="attendance.html">Attendance</a></li>
+                        <li><a href="assignment.html">Assignment</a></li>
+                        <li><a href="result.html">Result</a></li>
+                        <li><a href="faculties.html" class="active">Faculties</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -32,9 +39,8 @@
         <section class="page-section">
             <h2>Our Faculties</h2>
             <p>Meet our experienced faculty members and their subjects</p>
-            
+
             <div class="faculties-grid">
-                <!-- Faculty 1 -->
                 <div class="faculty-card">
                     <div class="faculty-avatar">👨‍🏫</div>
                     <h3>Dr. Robert Smith</h3>
@@ -42,8 +48,7 @@
                     <p class="faculty-details">Ph.D. in Computer Science, 15 years of teaching experience</p>
                     <p class="faculty-email">📧 r.smith@university.edu</p>
                 </div>
-                
-                <!-- Faculty 2 -->
+
                 <div class="faculty-card">
                     <div class="faculty-avatar">👩‍🏫</div>
                     <h3>Prof. Sarah Johnson</h3>
@@ -51,8 +56,7 @@
                     <p class="faculty-details">M.Sc. in Information Technology, 10 years of teaching experience</p>
                     <p class="faculty-email">📧 s.johnson@university.edu</p>
                 </div>
-                
-                <!-- Faculty 3 -->
+
                 <div class="faculty-card">
                     <div class="faculty-avatar">👨‍🏫</div>
                     <h3>Dr. Michael Williams</h3>
@@ -60,8 +64,7 @@
                     <p class="faculty-details">Ph.D. in Web Technologies, 12 years of teaching experience</p>
                     <p class="faculty-email">📧 m.williams@university.edu</p>
                 </div>
-                
-                <!-- Faculty 4 -->
+
                 <div class="faculty-card">
                     <div class="faculty-avatar">👩‍🏫</div>
                     <h3>Prof. Emily Davis</h3>
@@ -69,8 +72,7 @@
                     <p class="faculty-details">M.Sc. in Networking, 8 years of teaching experience</p>
                     <p class="faculty-email">📧 e.davis@university.edu</p>
                 </div>
-                
-                <!-- Faculty 5 -->
+
                 <div class="faculty-card">
                     <div class="faculty-avatar">👨‍🏫</div>
                     <h3>Dr. James Brown</h3>
@@ -78,8 +80,7 @@
                     <p class="faculty-details">Ph.D. in Software Engineering, 14 years of teaching experience</p>
                     <p class="faculty-email">📧 j.brown@university.edu</p>
                 </div>
-                
-                <!-- Faculty 6 -->
+
                 <div class="faculty-card">
                     <div class="faculty-avatar">👩‍🏫</div>
                     <h3>Prof. Lisa Anderson</h3>
@@ -87,8 +88,7 @@
                     <p class="faculty-details">M.Sc. in AI & Machine Learning, 7 years of teaching experience</p>
                     <p class="faculty-email">📧 l.anderson@university.edu</p>
                 </div>
-                
-                <!-- Faculty 7 -->
+
                 <div class="faculty-card">
                     <div class="faculty-avatar">👨‍🏫</div>
                     <h3>Dr. David Wilson</h3>
@@ -96,8 +96,7 @@
                     <p class="faculty-details">Ph.D. in Information Security, 11 years of teaching experience</p>
                     <p class="faculty-email">📧 d.wilson@university.edu</p>
                 </div>
-                
-                <!-- Faculty 8 -->
+
                 <div class="faculty-card">
                     <div class="faculty-avatar">👩‍🏫</div>
                     <h3>Prof. Maria Garcia</h3>
@@ -113,4 +112,5 @@
         <p>&copy; 2026 Student Portal. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

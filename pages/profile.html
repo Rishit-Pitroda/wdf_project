@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portal - Profile</title>
-    <link rel="stylesheet" href="D:\wdf_project\css\style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -16,13 +19,17 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="register.html">Register</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="profile.html" class="active">Profile</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="attendance.html">Attendance</a></li>
-                <li><a href="assignment.html">Assignment</a></li>
-                <li><a href="result.html">Result</a></li>
-                <li><a href="faculties.html">Faculties</a></li>
+                <li class="dropdown">
+                    <a href="dashboard.html">Dashboard <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="profile.html" class="active">Profile</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="attendance.html">Attendance</a></li>
+                        <li><a href="assignment.html">Assignment</a></li>
+                        <li><a href="result.html">Result</a></li>
+                        <li><a href="faculties.html">Faculties</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -32,7 +39,7 @@
         <section class="page-section">
             <h2>Profile</h2>
             <p>Your personal information</p>
-            
+
             <div class="profile-container">
                 <div class="profile-header">
                     <div class="profile-avatar-large">👤</div>
@@ -43,7 +50,7 @@
                         <a href="#" class="btn btn-secondary">Edit Profile</a>
                     </div>
                 </div>
-                
+
                 <div class="profile-details-grid">
                     <div class="profile-detail-item">
                         <h4>Personal Information</h4>
@@ -64,7 +71,7 @@
                             <span class="value">123 University Avenue, Campus City</span>
                         </div>
                     </div>
-                    
+
                     <div class="profile-detail-item">
                         <h4>Academic Information</h4>
                         <div class="detail-row">
@@ -84,7 +91,7 @@
                             <span class="value">3.5</span>
                         </div>
                     </div>
-                    
+
                     <div class="profile-detail-item">
                         <h4>Contact Information</h4>
                         <div class="detail-row">
@@ -109,4 +116,5 @@
         <p>&copy; 2026 Student Portal. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

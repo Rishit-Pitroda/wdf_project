@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portal - Assignments</title>
-    <link rel="stylesheet" href="D:\wdf_project\css\style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -16,13 +19,17 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="register.html">Register</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="attendance.html">Attendance</a></li>
-                <li><a href="assignment.html" class="active">Assignment</a></li>
-                <li><a href="result.html">Result</a></li>
-                <li><a href="faculties.html">Faculties</a></li>
+                <li class="dropdown">
+                    <a href="dashboard.html">Dashboard <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="attendance.html">Attendance</a></li>
+                        <li><a href="assignment.html" class="active">Assignment</a></li>
+                        <li><a href="result.html">Result</a></li>
+                        <li><a href="faculties.html">Faculties</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -32,20 +39,21 @@
         <section class="page-section">
             <h2>Assignments</h2>
             <p>Manage your assignments and track deadlines</p>
-            
+
             <div class="assignment-filters">
                 <button class="filter-btn active">All</button>
                 <button class="filter-btn">Pending</button>
                 <button class="filter-btn">Submitted</button>
                 <button class="filter-btn">Graded</button>
             </div>
-            
+
             <div class="assignment-list">
                 <div class="assignment-item pending">
                     <div class="assignment-info">
                         <h3>Binary Tree Implementation</h3>
                         <p class="assignment-course">Data Structures & Algorithms</p>
-                        <p class="assignment-desc">Implement a binary tree with insertion, deletion, and traversal operations.</p>
+                        <p class="assignment-desc">Implement a binary tree with insertion, deletion, and traversal
+                            operations.</p>
                         <div class="assignment-meta">
                             <span><strong>Due:</strong> 2026-07-25</span>
                             <span><strong>Points:</strong> 100</span>
@@ -56,7 +64,7 @@
                         <a href="#" class="btn btn-secondary">Submit</a>
                     </div>
                 </div>
-                
+
                 <div class="assignment-item pending">
                     <div class="assignment-info">
                         <h3>ER Diagram Design</h3>
@@ -72,7 +80,7 @@
                         <a href="#" class="btn btn-secondary">Submit</a>
                     </div>
                 </div>
-                
+
                 <div class="assignment-item pending">
                     <div class="assignment-info">
                         <h3>Network Configuration Lab</h3>
@@ -88,7 +96,7 @@
                         <a href="#" class="btn btn-secondary">Submit</a>
                     </div>
                 </div>
-                
+
                 <div class="assignment-item submitted">
                     <div class="assignment-info">
                         <h3>HTML/CSS Website</h3>
@@ -104,7 +112,7 @@
                         <span class="submitted-date">Submitted: 2026-07-14</span>
                     </div>
                 </div>
-                
+
                 <div class="assignment-item graded">
                     <div class="assignment-info">
                         <h3>Software Project Proposal</h3>
@@ -128,4 +136,5 @@
         <p>&copy; 2026 Student Portal. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
